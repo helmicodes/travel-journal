@@ -18,11 +18,22 @@ nav {
 }
 
 .main {
-  display: flex;
+  display: grid;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .card {
-  display: flex;
-  width: auto;
+  width: 470px;
+  font-size: 12px;
+  flex: 0 0 auto;        /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
+  padding: 8px;
+}
+
+.card--image {
+  height: auto;
 }
